@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
     <style>
+        /* table border */
         table ,tr, td {
             border: 1px solid black;
             border-collapse: collapse;
         }
-
+        
+        /* image size adjust */
         img{
+            width: 100px;
             display: block;
-            margin: auto;
+            margin: 10px auto;
         }
         
         tr,td{
@@ -20,28 +23,37 @@
             padding-left: 5px;
             padding-right: 5px;
         }
+
+        tr {
+            background-color: #cfcfcfb6;
+        }
         
     </style>
 </head>
 <body>
     <table>
+        <!-- row for name -->
         <tr>
             <td>Name</td>
             <td>CHEW JIA WEI</td>
-            <td><img src="chew.jpg" alt="" width="200px"></td>
+            <td><img src="chew.jpg" alt=""></td>
         </tr>
+        <!-- row for date of birth -->
         <tr>
             <td>Date of Birth</td>
             <td colspan="2">2003/04/20</td>
         </tr>
+        <!-- row for religion -->
         <tr>
             <td>Religion</td>
             <td colspan="2">Buddha</td>
         </tr>
+        <!-- row for race -->
         <tr>
             <td>Race</td>
             <td colspan="2">Chinese</td>
         </tr>
+        <!-- row for address -->
         <tr>
             <td rowspan="4">Address</td>
             <td>Street</td>
@@ -59,6 +71,7 @@
             <td>State</td>
             <td>Johor</td>
         </tr>
+        <!-- row for contact -->
         <tr>
             <td rowspan="3">Contact</td>
             <td>Mobile Phone</td>
@@ -72,18 +85,22 @@
             <td>Website</td>
             <td> -</td>
         </tr>
+        <!-- row for Course and Institution -->
         <tr>
             <td>Course and Institution</td>
             <td colspan="2">BACHELOR OF INFORMATION TECHNOLOGY WITH HONOURS</td>
         </tr>
+        <!-- row for skills -->
         <tr>
             <td>Programming skills</td>
             <td colspan="2">Beginner</td>
         </tr>
+        <!-- row for Hobbies -->
         <tr>
             <td>Hobbies</td>
             <td colspan="2">GYM</td>
         </tr>
+        <!-- row for Wishlist -->
         <tr>
             <td>2025 Wishlist</td>
             <td colspan="2">Having more time to enjoy life</td>

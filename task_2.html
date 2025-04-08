@@ -5,37 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task2</title>
     <style>
+        /* set default font size */
         body{
             font-size: 17px;
         }
 
+        /* set the size of input bar */
+        input[name="age"]{
+            width: 35px;
+        }
+
+        /* set the font size */
         input[type="submit"], input[type="reset"]{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 14px;
         }
 
-        input[name="age"]{
-            width: 35px;
-        }
     </style>
 </head>
 <body>
     <h1>Conference Registration Form</h1>
 
+    <!-- create form -->
     <form action="">
+        <!-- name part -->
         <label for="name">Full Name:</label><br>
         <input type="text" name="name" id="name" placeholder="Enter your full name" required><br>
 
+        <!-- email part -->
         <label for="email">Email Address:</label><br>
         <input type="test" name="email" id="email" placeholder="Enter your email address" required><br>
         
+        <!-- age part -->
         <label for="age">Age:</label><br>
         <input type="number" name="age" id="age" placeholder="18" min="18" max="99" required><br><br>
         
+        <!-- gender  -->
         <label for="gender"> Gender:</label><br><br>
         <input type="radio" name="gender" id="gender">Male <br>
         <input type="radio" name="gender" id="gender">Female <br><br>
         
+        <!-- country part -->
         <label for="country">Country of Residence:</label><br>
         <select name="country" id="country">
             <option value="Malaysia">Malaysia</option>
@@ -44,19 +54,23 @@
             <option value="Thailand">Thailand</option>
         </select><br><br>
         
+        <!-- interest part -->
         <label for="interest">Areas of Interest:</label><br><br>
         <input type="checkbox" name="interest" id="interest" value="Software Development">Software Development <br>
         <input type="checkbox" name="interest" id="interest" value="Data Science">Data Science  <br>
         <input type="checkbox" name="interest" id="interest" value="Cybersecurity">Cybersecurity  <br>
         <input type="checkbox" name="interest" id="interest" value="Artificial Intelligence">Artificial Intelligence  <br><br>
 
+        <!-- experience part -->
         <label for="experience">Experience Level:</label><br><br>
         <input type="radio" name="experience" id="experience">Beginner <br>
         <input type="radio" name="experience" id="experience">Intermediate <br>
         <input type="radio" name="experience" id="experience">Advanced <br><br>
 
+        <!-- comments part -->
         <label for="comment">Comments or Questions:</label> <br>
         <textarea name="comment" id="comment" cols="50" rows="4" placeholder="Any comments or questions?"></textarea><br>
+        <!-- submit button  -->
         <input type="submit" value="Register">
         <input type="reset" value="Reset">
     </form>
